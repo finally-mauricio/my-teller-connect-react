@@ -6,7 +6,7 @@
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "module": "CommonJS",
-    "moduleResolution": "node16",
+    "moduleResolution": "node",
     "noEmit": true,
     "removeComments": false,
     "strict": true,
