@@ -7,6 +7,12 @@ module.exports = [
   // Base configuration
   {
     entry: './src/index.ts',
+    resolve: {      
+        alias: {          
+            'react': path.resolve(__dirname, './node_modules/react'),
+          'react-dom': path.resolve(__dirname, './node_modules/react-dom'),      
+        }  
+    },  
     externals: {
       react: {
         root: 'React',
@@ -42,6 +48,12 @@ module.exports = [
   // UMD build with inline PropTypes
   {
     entry: './src/index.ts',
+    resolve: {      
+        alias: {          
+            'react': path.resolve(__dirname, './node_modules/react'),
+          'react-dom': path.resolve(__dirname, './node_modules/react-dom'),      
+        }  
+    },  
     externals: {
       react: {
         root: 'React',
@@ -78,6 +90,12 @@ module.exports = [
   // Minified UMD Build without PropTypes
   {
     entry: './src/index.ts',
+    resolve: {      
+        alias: {          
+            'react': path.resolve(__dirname, './node_modules/react'),
+          'react-dom': path.resolve(__dirname, './node_modules/react-dom'),      
+        }  
+    },  
     externals: {
       react: {
         root: 'React',
