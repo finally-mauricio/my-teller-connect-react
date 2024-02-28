@@ -8,18 +8,20 @@ module.exports = [
   {
     entry: './src/index.ts',
     externals: {
-      'react': {
-        commonjs: 'react',
+      react: {
+        root: 'React',
         commonjs2: 'react',
+        commonjs: 'react',
         amd: 'react',
-        root: 'React'
+        umd: 'react',
       },
       'react-dom': {
-        commonjs: 'react-dom',
+        root: 'ReactDOM',
         commonjs2: 'react-dom',
+        commonjs: 'react-dom',
         amd: 'react-dom',
-        root: 'ReactDOM'
-      }
+        umd: 'react-dom',
+      },
     },
     output: {
       path:  path.resolve(__dirname, path.dirname(pkg.main)),
@@ -43,18 +45,20 @@ module.exports = [
   {
     entry: './src/index.ts',
     externals: {
-      'react': {
-        commonjs: 'react',
+      react: {
+        root: 'React',
         commonjs2: 'react',
+        commonjs: 'react',
         amd: 'react',
-        root: 'React'
+        umd: 'react',
       },
       'react-dom': {
-        commonjs: 'react-dom',
+        root: 'ReactDOM',
         commonjs2: 'react-dom',
+        commonjs: 'react-dom',
         amd: 'react-dom',
-        root: 'ReactDOM'
-      }
+        umd: 'react-dom',
+      },
     },
     output: {
       path:  path.resolve(__dirname, path.dirname(pkg.browser)),
@@ -79,18 +83,20 @@ module.exports = [
   {
     entry: './src/index.ts',
     externals: {
-      'react': {
-        commonjs: 'react',
+      react: {
+        root: 'React',
         commonjs2: 'react',
+        commonjs: 'react',
         amd: 'react',
-        root: 'React'
+        umd: 'react',
       },
       'react-dom': {
-        commonjs: 'react-dom',
+        root: 'ReactDOM',
         commonjs2: 'react-dom',
+        commonjs: 'react-dom',
         amd: 'react-dom',
-        root: 'ReactDOM'
-      }
+        umd: 'react-dom',
+      },
     },
     output: {
       path:  path.resolve(__dirname, path.dirname(pkg['browser:min'])),
