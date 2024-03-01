@@ -6,13 +6,7 @@ const webpack = require('webpack');
 module.exports = [
   // Base configuration
   {
-    entry: './src/index.ts',
-    resolve: {      
-        alias: {          
-            'react': path.resolve(__dirname, './node_modules/react'),
-          'react-dom': path.resolve(__dirname, './node_modules/react-dom'),      
-        }  
-    },  
+    entry: './src/index.ts',  
     externals: {
       react: {
         root: 'React',
@@ -43,17 +37,13 @@ module.exports = [
     },
     resolve: {
       extensions: ['.ts', '.js', '.tsx', '.jsx'],
+      symlinks: false
+
     },
   },
   // UMD build with inline PropTypes
   {
     entry: './src/index.ts',
-    resolve: {      
-        alias: {          
-            'react': path.resolve(__dirname, './node_modules/react'),
-          'react-dom': path.resolve(__dirname, './node_modules/react-dom'),      
-        }  
-    },  
     externals: {
       react: {
         root: 'React',
@@ -85,17 +75,12 @@ module.exports = [
     },
     resolve: {
       extensions: ['.ts', '.js', '.tsx', '.jsx'],
+      symlinks: false
     },
   },
   // Minified UMD Build without PropTypes
   {
-    entry: './src/index.ts',
-    resolve: {      
-        alias: {          
-            'react': path.resolve(__dirname, './node_modules/react'),
-          'react-dom': path.resolve(__dirname, './node_modules/react-dom'),      
-        }  
-    },  
+    entry: './src/index.ts', 
     externals: {
       react: {
         root: 'React',
@@ -127,6 +112,7 @@ module.exports = [
     },
     resolve: {
       extensions: ['.ts', '.js', '.tsx', '.jsx'],
+      symlinks: false
     },
     plugins: [
       new webpack.DefinePlugin({
