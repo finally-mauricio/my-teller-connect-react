@@ -8,17 +8,17 @@ module.exports = [
   {
     entry: './src/index.ts',  
     externals: {
-      react: {
+      'react': {
         root: 'React',
         commonjs2: 'react',
         commonjs: 'react',
-        amd: 'React',
+        amd: 'react',
       },
       'react-dom': {
         root: 'ReactDOM',
         commonjs2: 'react-dom',
         commonjs: 'react-dom',
-        amd: 'ReactDOM',
+        amd: 'react-dom',
       },
     },
     output: {
@@ -45,17 +45,17 @@ module.exports = [
   {
     entry: './src/index.ts',
     externals: {
-      react: {
+      'react': {
         root: 'React',
         commonjs2: 'react',
         commonjs: 'react',
-        amd: 'React',
+        amd: 'react',
       },
       'react-dom': {
         root: 'ReactDOM',
         commonjs2: 'react-dom',
         commonjs: 'react-dom',
-        amd: 'ReactDOM',
+        amd: 'react-dom',
       },
     },
     output: {
@@ -82,17 +82,17 @@ module.exports = [
   {
     entry: './src/index.ts', 
     externals: {
-      react: {
+      'react': {
         root: 'React',
         commonjs2: 'react',
         commonjs: 'react',
-        amd: 'React',
+        amd: 'react',
       },
       'react-dom': {
         root: 'ReactDOM',
         commonjs2: 'react-dom',
         commonjs: 'react-dom',
-        amd: 'ReactDOM',
+        amd: 'react-dom',
       },
     },
     output: {
